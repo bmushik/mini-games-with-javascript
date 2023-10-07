@@ -1,0 +1,36 @@
+<!-- Please remember to include style.css and script.js files in your HTML document. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  
+  <div class="outer-container">
+    <div class="container">
+      <div class="row">
+        <div class="square" id="cpuRock">🪨</div>
+        <div class="square" id="cpuPaper">📰</div>
+        <div class="square" id="cpuScissors">✂️</div>
+      </div>
+      <div class="row">
+        <div class="large">
+          <p id="scoreDiv">YOU 0 | CPU 0</p>
+          <p id="win" class="score-table" style="display:none;">YOU WIN</p>
+          <p id="lose" class="score-table" style="display:none;">YOU LOSE</p>
+          <p id="draw" class="score-table" style="display:none;">DRAW</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="square" onclick="makeChoice('rock');" id="playerRock">🪨</div>
+        <div class="square" onclick="makeChoice('paper')" id="playerPaper">📰</div>
+        <div class="square" onclick="makeChoice('scissors')" id="playerScissors">✂️</div>
+      </div>
+      <div>
+        <button id="againButton" onclick="reset()" style="margin: 20px 0 10px 0;">RESET</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
